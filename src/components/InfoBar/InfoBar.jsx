@@ -200,7 +200,7 @@ const CVButton = styled.div`
   align-items: center;
   width: 100%;
 `;
-const Button = styled(Link)`
+const Button = styled.a`
   padding: 10px 30px;
   text-decoration: none;
   font-family: "Courier Prime", monospace;
@@ -304,7 +304,7 @@ function InfoBar({
 
           <CVButton>
             <Button
-              to="https://drive.google.com/file/d/1w-cJnRJpR5-w5ipPb-xslznrADutUIwz/view?usp=sharing"
+              href="https://drive.google.com/file/d/1w-cJnRJpR5-w5ipPb-xslznrADutUIwz/view?usp=sharing"
               target="_blank"
             >
               Download My CV
