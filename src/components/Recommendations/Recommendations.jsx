@@ -117,13 +117,13 @@ function Recommendations() {
             showIndicators={false}
             centerMode={true}
             emulateTouch={true}
-            infiniteLoop={true}
+            // infiniteLoop={true}
             showThumbs={false}
             preventMovementUntilSwipeScrollTolerance={true}
             interval={5000}
             autoPlay={true}
             showStatus={false}
-            transitionTime={700}
+            transitionTime={500}
           >
             {sliderData.map((item, index) => (
               <SliderContainer key={index}>

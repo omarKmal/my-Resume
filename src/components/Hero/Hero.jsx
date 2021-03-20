@@ -101,6 +101,7 @@ const MoveBox = styled.div`
   align-items: center;
   @media (max-width: ${screenSize.mobile}px) {
     flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -109,7 +110,7 @@ const CodeText = styled.span`
   font-size: ${fonts.mdFont};
 `;
 const ExpText = styled.div`
-  max-width: 180px;
+  max-width: 210px;
   max-height: 30px;
   overflow: hidden;
   display: flex;
@@ -129,6 +130,9 @@ const ECarousel = styled(Carousel)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  li.slide {
+    text-align: center;
+  }
 `;
 
 const ExpContainer = styled.div`
@@ -143,6 +147,9 @@ const Exp = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: ${screenSize.mobile}px) {
+    width: 100%;
+  }
 `;
 const Num = styled.h2`
   color: ${color.mainColor};
@@ -187,9 +194,13 @@ function Hero({ isOpen, isDesktop }) {
                 transitionTime={2000}
                 showThumbs={false}
               >
-                <Word>web interfaces.</Word>
-                <Word></Word>
-                <Word> automation tools</Word>
+                <Word>Web Interfaces.</Word>
+                <Word>Responsive Website</Word>
+                <Word>Automation Tools</Word>
+                <Word>React Website</Word>
+                <Word>JQuery Website</Word>
+                <Word>Clean Code</Word>
+                <Word>Best Performance</Word>
               </ECarousel>
             </ExpText>
             <CodeText>&lt;/Code&gt;</CodeText>

@@ -145,7 +145,7 @@ const OPIcon = styled(PriceIcon)`
 const EOrderBox = styled(OrderNowContainer)`
   justify-content: center;
 `;
-function Services({ isChangeView }) {
+function Services({ isChangeView, isMobile }) {
   const [SData, SetSData] = useState([]);
 
   useEffect(() => {
@@ -172,7 +172,7 @@ function Services({ isChangeView }) {
           </BoxContainer>
         ))}
       </ServicesContainer>
-      <Marginer direction="vertical" margin={20} />
+      <Marginer direction="vertical" margin={isMobile ? 40 : 20} />
       <GlobalHeaderContainer>
         <GlobalHeader>Price Plans</GlobalHeader>
       </GlobalHeaderContainer>

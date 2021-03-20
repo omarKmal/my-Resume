@@ -13,6 +13,7 @@ const BrandsContainer = styled.div`
 
   @media (max-width: ${screenSize.mobile}px) {
     justify-content: center;
+    flex-direction: column;
   }
 `;
 const ImgContainer = styled.div`

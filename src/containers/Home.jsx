@@ -20,6 +20,7 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [isInfoOpen, setInfoOpen] = useState(false);
 
+  const isMobile = useMediaQuery({ maxWidth: `${screenSize.mobile}px` });
   const isDesktop = useMediaQuery({ minWidth: `${screenSize.desktop}px` });
   const isChangeView = useMediaQuery({
     maxWidth: `${screenSize.changeView}px`,
@@ -77,10 +78,9 @@ function Home() {
         />
         <Marginer direction="vertical" margin={40} />
         <WrapperContainer>
-          <Services isChangeView={isChangeView} />
+          <Services isChangeView={isChangeView} isMobile={isMobile} />
           <Recommendations />
           <Brands />
-          <Marginer direction="vertical" margin={40} />
           <Footer />
           <Marginer direction="vertical" margin={20} />
         </WrapperContainer>

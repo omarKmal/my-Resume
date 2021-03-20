@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GlobalPara } from "../../containers/Global";
+import { screenSize } from "../../containers/responsive";
 import { color } from "../../containers/tools";
 
 const FooterContainer = styled.div`
@@ -11,6 +12,12 @@ const FooterContainer = styled.div`
   align-items: center;
   padding: 20px;
   flex-wrap: wrap;
+  @media (max-width: ${screenSize.mobile}px) {
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
 `;
 const Email = styled.a`
   color: ${color.grayFont};
@@ -28,7 +35,7 @@ function Footer() {
     <FooterContainer>
       <GlobalPara>&copy; 2021 All Rights Reserved.</GlobalPara>
       <GlobalPara>
-        Email:{" "}
+        Email:
         <Email href="mailto:‪omrkmal2828@gmail.com">
           omrkmal2828@gmail.com
         </Email>
