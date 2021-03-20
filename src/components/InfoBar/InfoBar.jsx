@@ -303,7 +303,7 @@ function InfoBar({
 
           <CVButton>
             <Button
-              href="https://drive.google.com/file/d/1w-cJnRJpR5-w5ipPb-xslznrADutUIwz/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BiPTVJgei05-EA-KcukhTAiIEVjp_6jE/view?usp=sharing"
               target="_blank"
             >
               Download My CV
