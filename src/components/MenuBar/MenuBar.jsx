@@ -158,8 +158,8 @@ function MenuBar({ isOpen, handleOpen, handleClick }) {
         </TopSection>
         <Hello isOpen={isOpen}>Hello</Hello>
         <ContentSection isOpen={isOpen}>
-          <Links to="/home">Home</Links>
-          <Links to="/home" onClick={handlePortofolio}>
+          <Links to="/">Home</Links>
+          <Links to="/" onClick={handlePortofolio}>
             portfolio
             <IconContainer openPortfolio={openPortfolio}>
               <Icon icon={faChevronRight} />
@@ -178,9 +178,9 @@ function MenuBar({ isOpen, handleOpen, handleClick }) {
             </IconContainer>
           </Links>
           <OpenList openBlog={openBlog}>
-            <Links to="/">portofolio 1</Links>
-            <Links to="/">portofolio 2</Links>
-            <Links to="/">portofolio 3</Links>
+            <Links to="/">Blog 1</Links>
+            <Links to="/">Blog 2</Links>
+            <Links to="/">Blog 3</Links>
           </OpenList>
           <Links to="/contacts">contacts</Links>
           <Links to="/education">education</Links>

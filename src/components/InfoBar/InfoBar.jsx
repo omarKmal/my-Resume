@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { screenSize } from "../../containers/responsive";
 import useOutSideClick from "../../containers/useOusSideClick";
+import { Link } from "react-router-dom";
 
 const { mainColor, grayFont, barColor } = color;
 
@@ -193,6 +194,35 @@ const SochialIcon = styled(FontAwesomeIcon)`
     color: #fff;
   }
 `;
+const CVButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+const Button = styled(Link)`
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: ${color.mainColor};
+  background-color: ${color.boxColor};
+  cursor: pointer;
+  border: none;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    filter: contrast(80%);
+    transform: translate(0, -5px);
+  }
+  @media (max-width: ${screenSize.mobile}px) {
+    padding: 15px 20px;
+  }
+`;
 
 function InfoBar({
   progressData,
@@ -268,6 +298,13 @@ function InfoBar({
               <Title>GIT knowledge</Title>
             </SkillContainer>
           </AllSkillsContainer>
+          <Marginer direction="vertical" margin={20} />
+          <Line />
+          <Marginer direction="vertical" margin={20} />
+
+          <CVButton>
+            <Button to="/">Download My CV</Button>
+          </CVButton>
         </ContentWrapper>
       </ContentContainer>
       <InfoFooter>

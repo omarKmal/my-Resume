@@ -98,10 +98,10 @@ function Home() {
           <Marginer direction="vertical" margin={20} />
         </WrapperContainer>
       </PageContainer>
-      <Route
+      {/* <Route
         path="/portofolio-1"
         render={() => <Portofolio handleClick={handleClick} />}
-      />
+      /> */}
     </>
   );
 }
