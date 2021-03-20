@@ -188,7 +188,7 @@ function Hero({ isOpen, isDesktop }) {
                 showThumbs={false}
               >
                 <Word>web interfaces.</Word>
-                <Word> design mockups.</Word>
+                <Word></Word>
                 <Word> automation tools</Word>
               </ECarousel>
             </ExpText>
@@ -200,15 +200,15 @@ function Hero({ isOpen, isDesktop }) {
       </HeroWrapper>
       <ExpContainer>
         <Exp>
-          <Num>10 + </Num>
+          <Num>1 + </Num>
           <Text> Years Experience</Text>
         </Exp>
         <Exp>
-          <Num>143</Num>
+          <Num>3</Num>
           <Text>Completed Projects</Text>
         </Exp>
         <Exp>
-          <Num>114</Num>
+          <Num>11</Num>
           <Text>Happy Customers</Text>
         </Exp>
         <Exp>

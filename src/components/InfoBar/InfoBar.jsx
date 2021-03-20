@@ -303,7 +303,12 @@ function InfoBar({
           <Marginer direction="vertical" margin={20} />
 
           <CVButton>
-            <Button to="/">Download My CV</Button>
+            <Button
+              to="https://drive.google.com/file/d/1w-cJnRJpR5-w5ipPb-xslznrADutUIwz/view?usp=sharing"
+              target="_blank"
+            >
+              Download My CV
+            </Button>
           </CVButton>
         </ContentWrapper>
       </ContentContainer>
