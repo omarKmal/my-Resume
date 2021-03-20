@@ -13,25 +13,13 @@ import NavBar from "../components/NavBar/NavBar";
 import Recommendations from "../components/Recommendations/Recommendations";
 import Brands from "../components/Brands/Brands";
 import Footer from "../components/Footer/Footer";
-import { Route } from "react-router";
-import Portofolio from "../components/Portofolio/Portofolio";
 
 function Home() {
   const [progressData, setProgressData] = useState([]);
   const [lodaing, setLodaing] = useState(true);
-  const [error, setError] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isInfoOpen, setInfoOpen] = useState(false);
 
-  const isMobile = useMediaQuery({ maxWidth: `${screenSize.mobile}px` });
-  const isTablet = useMediaQuery({
-    minWidth: `${screenSize.mobile}px`,
-    maxWidth: `${screenSize.tablet}px`,
-  });
-  const isLaptop = useMediaQuery({
-    minWidth: `${screenSize.laptop}px`,
-    maxWidth: `${screenSize.desktop}px`,
-  });
   const isDesktop = useMediaQuery({ minWidth: `${screenSize.desktop}px` });
   const isChangeView = useMediaQuery({
     maxWidth: `${screenSize.changeView}px`,
@@ -72,7 +60,6 @@ function Home() {
         isChangeView={isChangeView}
         progressData={progressData}
         lodaing={lodaing}
-        error={error}
         isInfoOpen={isInfoOpen}
         handleInfoOpen={handleInfoOpen}
         handleClick={handleClick}

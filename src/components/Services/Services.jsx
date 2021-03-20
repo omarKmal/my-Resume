@@ -147,11 +147,8 @@ const EOrderBox = styled(OrderNowContainer)`
 `;
 function Services({ isChangeView }) {
   const [SData, SetSData] = useState([]);
-  const [lodaing, setLodaing] = useState(true);
-  const [lastBox, setLastBox] = useState([]);
 
   useEffect(() => {
-    setLodaing(false);
     SetSData(servicesData);
   }, []);
 
@@ -163,11 +160,7 @@ function Services({ isChangeView }) {
       <Marginer direction="vertical" margin={40} />
       <ServicesContainer>
         {SData.map((item, index) => (
-          <BoxContainer
-            isChangeView={isChangeView}
-            key={index}
-            lastBox={lastBox}
-          >
+          <BoxContainer isChangeView={isChangeView} key={index}>
             <GlobalHeader>{item.title}</GlobalHeader>
             <Marginer direction="vertical" margin={30} />
             <GlobalPara>{item.content}</GlobalPara>

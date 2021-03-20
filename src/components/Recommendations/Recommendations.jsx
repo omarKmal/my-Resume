@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { GlobalHeader, GlobalPara } from "../../containers/Global";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Image from "../../images/testimonial-3-140x140.jpg";
 import { sliderData } from "../../Data";
 import { Carousel } from "react-responsive-carousel";
 import { screenSize } from "../../containers/responsive";
